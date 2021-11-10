@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main() {
-    int a,b,c,d;
-    printf("Please Enter a number: "); 
+    int arr[50],a,b,c;
+
+    printf("Enter then size of the array: ");
     scanf("%d",&a);
-    for (int i = 0; i <= a; i++)
-    {
-        printf("%d ",i);
-        if (i%10==0)
-        {
-           printf("\n");
-        }
-        
+    printf("Enter the elements of the array: ");
+    for(int i=0; i<a; i++) {
+        scanf("%d",&arr[i]);
     }
-    
+    for(int i=0; i<a; i++) {
+        printf("%d\n",arr[i]);
+    }
 }
